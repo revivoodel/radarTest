@@ -1,3 +1,124 @@
-body{
-    
+:root {
+    --black: #100F14;
+    --light-black: #16121E;
+    --green: #0BC440;
+    --dark-green: rgb(6, 55, 20);
+    --dark-red: #27121B;
+    --red: #831F33;
+    --text: #cfc8ca;
+    --gray: #cfc8ca;
+
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--black);
+    line-height: 1.5;
+
+}
+
+h1 {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 12px;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    box-shadow: rgba(102, 102, 110, 0.25) 0px 6px 12px -2px, rgba(115, 109, 109, 0.3) 0px 3px 7px -3px;
+    height: 38px;
+    padding: 0 8px;
+}
+
+header button {
+    position: relative;
+    top: 5px;
+}
+
+header button:first-child {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    font-size: 6px;
+    text-align: center;
+    padding: 2px 0px 0 0;
+    background-color: var(--green);
+    border: 1px solid var(--black);
+    transition: rotate 1s ease, box-shadow 1s ease;
+}
+
+header button:first-child:hover {
+    box-shadow: var(--green) 0px 5px 15px;
+    rotate: 360deg;
+}
+
+header button:nth-child(n+2) {
+    background-color: var(--dark-green);
+    color: var(--green);
+    font-size: 10px;
+    height: 22px;
+    border-radius: 10px;
+    border: 1px var(--green) solid;
+    opacity: 80%;
+    font-weight: bold;
+    top: 8px;
+}
+
+header button:nth-child(n+2):hover {
+    opacity: 100%;
+}
+
+#radarSection {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px var(--gray) solid;
+    padding: 20px;
+    background-color: var(--light-black);
+}
+
+#radarSection .left,
+.right {
+    width: 50%;
+}
+
+#radarSection .right {
+    margin-top: calc(20% - 150px);
+}
+
+#radarSection:hover {
+    border-color: var(--green);
+}
+
+.right .number {
+    font-size: 30px;
+    color: var(--green);
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.right p {
+    color: var(--text);
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#radarSection article {
+    margin-top: 10px;
+}
+
+main {
+    width: 75%;
+    margin: auto;
 }

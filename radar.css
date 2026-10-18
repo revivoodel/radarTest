@@ -1,0 +1,23 @@
+
+
+.radar {
+  width: 248px; height: 248px;
+  border-radius: 50%;
+
+border:  2px solid var(--green);
+  background: 
+    linear-gradient(transparent 49.75%, var(--green) 0 50.25%, transparent 0) 50% no-repeat,
+    linear-gradient(90deg, transparent 49.75%,  var(--green) 0 50.25%, transparent 0) 50% no-repeat,
+    linear-gradient(var(--light-black), var(--light-black));
+  background-size: 100%, 248px 248px, 248px 248px, 100%;
+}
+.sweep {
+  box-sizing: border-box;
+  border-right: solid 1px hsla(145, 50%, 40%, .3);
+  width: 124px; height: 124px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 5));
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep { to { transform: rotate(360deg); } }

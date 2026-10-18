@@ -10,6 +10,9 @@
     --dark-gray: #3d393a;
     --yellow: #d8c141;
     --dark-yellow: #524812;
+    font-size: 12px;
+    /*BUNOS
+     To resize all text on the website, just change the font-size in :root */
 }
 
 body {
@@ -25,7 +28,7 @@ h1 {
     font-family: 'Courier Prime', monospace;
     font-weight: 700;
     color: var(--green);
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 header {
@@ -48,7 +51,7 @@ header button:first-child {
     border-radius: 50%;
     height: 28px;
     width: 28px;
-    font-size: 6px;
+    font-size: 0.5rem;
     text-align: center;
     padding: 2px 0px 0 0;
     background-color: var(--green);
@@ -64,7 +67,7 @@ header button:first-child:hover {
 header button:nth-child(n+2) {
     background-color: var(--dark-green);
     color: var(--green);
-    font-size: 10px;
+    font-size: 0.8rem;
     height: 22px;
     border-radius: 10px;
     border: 1px var(--green) solid;
@@ -89,7 +92,7 @@ header button:nth-child(n+2):hover {
 
 .radar p {
     color: var(--green);
-    font-size: 20px;
+    font-size: 1.5rem;
     position: absolute;
 }
 
@@ -99,7 +102,7 @@ header button:nth-child(n+2):hover {
 }
 
 .radar p:nth-child(2) {
-     top: 120px;
+    top: 130px;
     left: 110px;
 }
 
@@ -122,7 +125,7 @@ header button:nth-child(n+2):hover {
 }
 
 .right .number {
-    font-size: 30px;
+    font-size: 2.5rem;
     color: var(--green);
     font-family: 'Courier Prime', monospace;
     font-weight: bold;
@@ -132,7 +135,7 @@ header button:nth-child(n+2):hover {
 
 .right p {
     color: var(--text);
-    font-size: 12px;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 }
@@ -156,7 +159,7 @@ main {
     border-radius: 25px;
     border: 1px var(--dark-gray) solid;
     color: var(--text);
-    font-size: 13px;
+    font-size: 1.1rem;
     height: 43px;
     margin-right: 10px;
 }
@@ -213,7 +216,7 @@ main {
 }
 
 #cards article div p {
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 #cards button {
@@ -221,7 +224,7 @@ main {
     text-align: center;
     font-family: 'Courier Prime', monospace;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 0.8rem;
     border-radius: 3px;
     border: 1px var(--gray) solid;
     position: relative;
@@ -258,7 +261,7 @@ input[type="range"]:disabled {
 
 #cards label {
     color: var(--green);
-    font-size: 10px;
+    font-size: 0.8rem;
     position: relative;
     top: -5px;
 }
@@ -273,7 +276,7 @@ input[type="range"]:disabled {
     top: -15px;
     left: 10px;
     color: var(--red);
-
+    font-size: 1.2rem;
 }
 
 #detected-button button {
@@ -283,7 +286,7 @@ input[type="range"]:disabled {
     color: var(--red);
     height: 35px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: bold;
     opacity: 80%;
 
@@ -304,6 +307,7 @@ footer {
         0px -3px 10px rgba(255, 255, 255, 0.08),
         0px 2px 6px rgba(255, 255, 255, 0.03);
     height: 58px;
+    position: relative;
 }
 
 footer button {
@@ -328,4 +332,15 @@ footer button:hover {
     fill: var(--green);
     color: var(--green);
     transform: scale(1.02);
+}
+#question{
+    position: absolute;
+    color: var(--text);
+    width: 33px;
+    height: 33px;
+    background-color: rgb(63, 61, 61);
+    border-radius: 50%;
+    font-size: 1.5rem;
+   left: calc(100% - 50px) ;
+   top: 30%;
 }
